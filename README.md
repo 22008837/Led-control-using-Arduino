@@ -1,4 +1,6 @@
-# Led-control-using-Arduino
+### REG NO: 212222110032
+### NAME: PRABHA C
+# EX.NO 1 Led-control-using-Arduino
 
 ## AIM
 To design and implement a system for LED control using an Arduino microcontroller and a push button.
@@ -58,9 +60,35 @@ Emergency Signaling System </br>
 Weighing Machines </br>
 
 ## CIRCUIT DIAGRAM
-
+![p cir_page-0001](https://github.com/user-attachments/assets/42e3bef2-6a66-43fe-9f00-fa9c4eb1f0b9)
 ## PROGRAM
+```
+void setup() {
+  // put your setup code here, to run once:
+   pinMode(11,OUTPUT);
+   pinMode(4,INPUT);
+}
 
+void loop() {
+  // put your main code here, to run repeatedly:
+  int button_status=digitalRead(4);
+  if(button_status==HIGH)
+  {
+    digitalWrite(11,HIGH);
+    delay(3000);
+  }
+  else
+  {
+  digitalWrite(11,LOW);
+  delay(1000);
+}
+}
+```
 ## OUTPUT
+### Pushbutton off
+![pro1](https://github.com/user-attachments/assets/c37871b1-dc8f-4f67-8d7c-a78d31476e37)
+### Pushbutton on
+![pro2](https://github.com/user-attachments/assets/ede99aa0-9941-497f-9e2f-4aa6fa07e0af)
 
 ## RESULT
+The design and implementation of a system for LED control using an Arduino microcontroller and a push button have been implemented successfully.
